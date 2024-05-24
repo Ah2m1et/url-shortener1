@@ -7,6 +7,26 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+# URL Kısaltma Uygulaması
+
+Bu uygulama, kullanıcıların uzun URL'leri kısaltmalarına ve kısaltılmış URL'leri yönetmelerine olanak tanır.
+
+## Kurulum
+
+1. Bu projeyi klonlayın veya indirin.
+2. Projeyi klonladıktan veya indirdikten sonra, projenin ana dizinine gidin.
+3. Gerekli Composer bağımlılıklarını yüklemek için terminalde veya komut istemcisinde `composer install` komutunu çalıştırın.
+4. `.env.example` dosyasını `.env` olarak kopyalayın ve gerekli ayarları yapın (veritabanı bağlantısı, uygulama anahtarı vb.).
+5. Uygulama anahtarını oluşturmak için terminalde veya komut istemcisinde `php artisan key:generate` komutunu çalıştırın.
+6. Veritabanını oluşturmak için terminalde veya komut istemcisinde `php artisan migrate` komutunu çalıştırın.
+7. Uygulamayı başlatmak için terminalde veya komut istemcisinde `php artisan serve` komutunu çalıştırın.
+
+## Kullanım
+
+- Ana sayfada, URL'yi kısaltmak için bir metin girdisi alanı ve bir buton bulunur.
+- Metin girdisi alanına uzun URL'yi yapıştırın ve butona tıklayın.
+- Uygun bulunan URL daha önce veritabanında olup olmadığı kontrol edilir. Eğer varsa, daha önceki kısaltma kullanıcıya gösterilir. Yoksa, yeni bir kısaltma kaydı oluşturulur ve kullanıcıya gösterilir.
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
